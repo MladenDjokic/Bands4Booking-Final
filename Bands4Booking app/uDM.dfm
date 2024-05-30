@@ -1,5 +1,4 @@
 object dm: Tdm
-  OnCreate = DataModuleCreate
   Height = 405
   Width = 380
   object dbBands4Booking: TFDConnection

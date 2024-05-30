@@ -78,8 +78,8 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_DcuOutput>C:\Users\mlade\OneDrive\Documents\GitHub\Dcu\</DCC_DcuOutput>
-        <DCC_ExeOutput>C:\Users\mlade\OneDrive\Documents\GitHub\Bin\</DCC_ExeOutput>
+        <DCC_DcuOutput>.\Dcu\</DCC_DcuOutput>
+        <DCC_ExeOutput>.\Bin\</DCC_ExeOutput>
         <DCC_E>false</DCC_E>
         <DCC_N>false</DCC_N>
         <DCC_S>false</DCC_S>
@@ -233,10 +233,12 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_BpiOutput>C:\Users\mlade\OneDrive\Desktop\Bands4Booking aplikacija\</DCC_BpiOutput>
-        <DCC_HppOutput>C:\Users\mlade\OneDrive\Desktop\Bands4Booking aplikacija\</DCC_HppOutput>
-        <DCC_ObjOutput>C:\Users\mlade\OneDrive\Desktop\Bands4Booking aplikacija\</DCC_ObjOutput>
-        <DCC_ExeOutput>C:\Users\mlade\OneDrive\Desktop\Bands4Booking final\</DCC_ExeOutput>
+        <DCC_BpiOutput>.\Bands4Booking_aplikacija\</DCC_BpiOutput>
+        <DCC_HppOutput>.\Bands4Booking_aplikacija\</DCC_HppOutput>
+        <DCC_ObjOutput>.\Bands4Booking_aplikacija\</DCC_ObjOutput>
+        <DCC_ExeOutput>..\Bin\</DCC_ExeOutput>
+        <DCC_DcuOutput>.\Units\</DCC_DcuOutput>
+        <DCC_DcpOutput>.\DCP\</DCC_DcpOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>

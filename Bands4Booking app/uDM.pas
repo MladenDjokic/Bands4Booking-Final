@@ -16,10 +16,11 @@ type
     dbBands4Booking: TFDConnection;
     QTemp: TFDQuery;
     FDTransaction1: TFDTransaction;
-    procedure DataModuleCreate(Sender: TObject);
+    //procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
+  procedure ConnectToDatabase;
     { Public declarations }
   end;
 
@@ -31,8 +32,23 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+ procedure Tdm.ConnectToDatabase;
+var
+  DBPath: string;
+begin
+  DBPath := ExtractFilePath(ParamStr(0)) + 'assets\database\bands4bookingdp.db3';
 
-procedure Tdm.DataModuleCreate(Sender: TObject);
+  ShowMessage('Database path: ' + DBPath);
+
+  dbBands4Booking.Params.Database := DBPath;
+  try
+    dbBands4Booking.Connected := True;
+  except
+    on E: Exception do
+      ShowMessage('Error connecting to database: ' + E.Message);
+  end;
+end;
+{procedure Tdm.DataModuleCreate(Sender: TObject);
 var
   DatabasePath: string;
 begin
@@ -47,5 +63,5 @@ begin
     on E: Exception do
       ShowMessage('Cannot connect to database: ' + E.Message);
   end;
-end;
+end;   }
 end.

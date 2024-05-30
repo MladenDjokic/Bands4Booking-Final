@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/16 14:02:06.000.172,=C:\Users\mlade\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 14:09:26.000.124,=C:\Users\mlade\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 14:10:00.000.136,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIntro.pas=C:\Users\mlade\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 14:10:00.000.136,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIntro.fmx=C:\Users\mlade\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/04/16 14:10:12.000.089,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Bands4Booking.dproj=C:\Users\mlade\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/04/16 14:35:01.000.398,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 14:35:26.000.403,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzbor.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 14:35:26.000.403,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzbor.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/04/16 15:04:45.000.955,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 15:05:09.000.199,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikSignIn.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/04/16 15:05:09.000.199,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikSignIn.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:18:19.000.763,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:20:33.000.469,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:21:26.000.765,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uDBM.dfm=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.dfm</Transaction>
+    <Transaction>2024/04/25 14:21:26.000.765,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uDBM.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:38:19.000.545,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:39:24.000.692,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikMain.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:39:24.000.692,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikMain.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/04/25 15:43:01.000.846,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:43:19.000.465,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uDM.dfm=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.dfm</Transaction>
+    <Transaction>2024/04/25 15:43:19.000.465,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uDM.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:49:45.000.081,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\assets\database\bands4bookingdp.db3</Transaction>
+    <Transaction>2024/04/25 17:22:16.000.232,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:22:37.000.855,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikSignUp.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:22:37.000.855,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uKorisnikSignUp.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/04/25 17:46:57.000.803,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:47:30.000.191,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzvodjacSignIn.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:47:30.000.191,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzvodjacSignIn.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/04/25 17:52:33.000.133,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:53:00.000.165,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzvodjacSignUp.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 17:53:00.000.165,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\uIzvodjacSignUp.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap\Unit1.fmx</Transaction>
+    <Transaction>2024/05/20 15:51:41.000.691,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 15:51:57.000.552,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uIzvodjacMain.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.fmx</Transaction>
+    <Transaction>2024/05/20 15:51:57.000.552,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uIzvodjacMain.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 19:40:31.000.140,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 19:40:53.000.960,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uIzvodjacOglas.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 19:40:53.000.960,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uIzvodjacOglas.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.fmx</Transaction>
+    <Transaction>2024/05/20 20:23:40.000.122,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 20:24:01.000.479,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uProfilIzvodjaca.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.fmx</Transaction>
+    <Transaction>2024/05/20 20:24:01.000.479,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uProfilIzvodjaca.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 21:29:07.000.650,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 21:29:32.000.593,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uKorisnikChat.fmx</Transaction>
+    <Transaction>2024/05/20 21:29:32.000.593,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uKorisnikChat.pas</Transaction>
+    <Transaction>2024/05/20 21:48:37.000.433,=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas</Transaction>
+    <Transaction>2024/05/20 21:48:57.000.363,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.pas=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uKorisnikAllChat.pas</Transaction>
+    <Transaction>2024/05/20 21:48:57.000.363,C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\Unit1.fmx=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy\uKorisnikAllChat.fmx</Transaction>
+    <Transaction>2024/05/21 15:07:34.000.337,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas=</Transaction>
+    <Transaction>2024/05/21 15:07:55.000.146,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas</Transaction>
+    <Transaction>2024/05/21 15:08:36.000.952,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas=</Transaction>
+    <Transaction>2024/05/21 16:25:04.000.886,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas</Transaction>
+    <Transaction>2024/05/21 16:25:36.000.431,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas=</Transaction>
+    <Transaction>2024/05/21 16:42:48.000.459,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/21 16:43:09.000.339,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.fmx=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.fmx</Transaction>
+    <Transaction>2024/05/21 16:43:09.000.339,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uProfilIzvodjaca.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/21 19:00:14.000.478,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/21 19:00:30.000.892,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uChatServer.fmx=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.fmx</Transaction>
+    <Transaction>2024/05/21 19:00:30.000.892,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uChatServer.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/23 00:37:00.000.460,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/23 00:37:20.000.839,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uPlacanje.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/23 00:37:20.000.839,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uPlacanje.fmx=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.fmx</Transaction>
+    <Transaction>2024/05/23 13:01:41.000.316,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/23 13:01:51.000.782,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.fmx=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uOceni.fmx</Transaction>
+    <Transaction>2024/05/23 13:01:51.000.782,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uOceni.pas</Transaction>
+    <Transaction>2024/05/23 14:04:55.000.099,=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
+    <Transaction>2024/05/23 14:05:59.000.935,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.fmx=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uIzvodjacPostojeciOglas.fmx</Transaction>
+    <Transaction>2024/05/23 14:05:59.000.935,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uIzvodjacPostojeciOglas.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64="" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

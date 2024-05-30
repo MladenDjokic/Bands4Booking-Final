@@ -1,0 +1,173 @@
+object FrmOceni: TFrmOceni
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 537
+  ClientWidth = 338
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Bottom: TLayout
+    Align = Bottom
+    Position.Y = 480.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object recBottomBG: TRectangle
+      Align = Client
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFDFCDCD
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Size.Width = 338.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      Stroke.Thickness = 50.000000000000000000
+    end
+  end
+  object Middle: TLayout
+    Align = Horizontal
+    Position.Y = 88.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 361.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = xFFE2E2B2
+      Size.Width = 338.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      object cbRating: TComboBox
+        Position.X = 111.000000000000000000
+        Position.Y = 84.000000000000000000
+        TabOrder = 0
+      end
+      object lbComment: TLabel
+        Position.X = 38.000000000000000000
+        Position.Y = 162.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Komentar'
+        TabOrder = 1
+      end
+      object lbOceni: TLabel
+        Position.X = 46.000000000000000000
+        Position.Y = 84.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ocena'
+        TabOrder = 2
+      end
+      object edComment: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 111.000000000000000000
+        Position.Y = 154.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Placanje: TLayout
+    Align = Horizontal
+    Position.Y = 447.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = xFFFBFBFB
+      Size.Width = 338.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.500000000000000000
+      object btSubmitRating: TButton
+        Align = Center
+        Size.Width = 100.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Potvrdi ocenu'
+        OnClick = btSubmitRatingClick
+      end
+    end
+  end
+  object Top: TLayout
+    Align = Top
+    Size.Width = 338.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recTopBG: TRectangle
+      Align = Client
+      Fill.Color = xFFFBFBFB
+      Size.Width = 338.000000000000000000
+      Size.Height = 97.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFBE4141
+      Stroke.Thickness = 0.000000000000000000
+      object cProfilePic: TCircle
+        Position.X = 279.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        object Image1: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object txtTop: TText
+        Align = Horizontal
+        Position.Y = 20.000000000000000000
+        Size.Width = 338.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ocena izvodjaca'
+        TextSettings.Font.Size = 25.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object btBack: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '<-'
+        OnClick = btBackClick
+      end
+      object recLinija: TRectangle
+        Align = Bottom
+        Position.Y = 88.000000000000000000
+        Size.Width = 338.000000000000000000
+        Size.Height = 9.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

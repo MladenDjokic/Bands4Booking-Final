@@ -3,10 +3,10 @@ object dm: Tdm
   Width = 380
   object dbBands4Booking: TFDConnection
     Params.Strings = (
-      'DriverID=SQLite'
       
-        'Database=C:\Users\mlade\OneDrive\Desktop\Bands4Booking ap - Copy' +
-        '\assets\database\bands4bookingdp.db3')
+        'Database=C:\Users\mlade\OneDrive\Documents\GitHub\Bands4Booking-' +
+        'Final\Bands4Booking app\assets\database\bands4bookingdp.db3'
+      'DriverID=SQLite')
     LoginPrompt = False
     Left = 160
     Top = 104

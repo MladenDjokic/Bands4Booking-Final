@@ -40,9 +40,14 @@ begin
 
   ShowMessage('Database path: ' + DBPath);
 
-  dbBands4Booking.Params.Database := DBPath;
+  dbBands4Booking.Params.Clear;
+  dbBands4Booking.Params.Add('DriverID=SQLite');
+  dbBands4Booking.Params.Add('Database=' + DBPath);
+
+ // dbBands4Booking.Params.Database := DBPath;
   try
     dbBands4Booking.Connected := True;
+    ShowMessage('Connected to database successfully.');
   except
     on E: Exception do
       ShowMessage('Error connecting to database: ' + E.Message);

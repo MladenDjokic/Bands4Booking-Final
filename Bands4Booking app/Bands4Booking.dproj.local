@@ -69,6 +69,6 @@
     <Transaction>2024/05/23 14:05:59.000.935,C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\uIzvodjacPostojeciOglas.pas=C:\Users\mlade\OneDrive\Desktop\GitHub\Bands4Booking app\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile Android64="emulator-5562" Android="emulator-5562"/>
+		<NoProfile Android64="" Android=""/>
 	</ActiveMobileDevice>
 </BorlandProject>

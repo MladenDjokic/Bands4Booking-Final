@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Objects, System.ImageList, FMX.ImgList, FMX.Controls.Presentation,
-  FMX.Layouts, FMX.Edit, uDM, Data.DB;
+  FMX.Layouts, FMX.Edit, uDM, Data.DB, FMX.ListBox, FMX.Calendar;
 
 type
   TFrmIzvodjacOglas = class(TForm)
@@ -40,6 +40,19 @@ type
     edNaziv: TEdit;
     btnSave: TButton;
     OpenDialog1: TOpenDialog;
+    cbVrsta: TComboBox;
+    Bend: TListBoxItem;
+    Pevac: TListBoxItem;
+    Gitarista: TListBoxItem;
+    DJ: TListBoxItem;
+    clDostupnost: TCalendar;
+    txtVrsta: TText;
+    ListBoxZanrovi: TListBox;
+    Zabavna: TListBoxItem;
+    Narodna: TListBoxItem;
+    Folk: TListBoxItem;
+    Pop: TListBoxItem;
+    Strano: TListBoxItem;
     procedure btBackClick(Sender: TObject);
     procedure btnImgClick(Sender: TObject);
     procedure btnNazivClick(Sender: TObject);
@@ -49,6 +62,7 @@ type
     { Private declarations }
     ImageFilePath: string;
     procedure SaveOglasToDatabase;
+    function GetSelectedZanrovi: string;
   public
     { Public declarations }
   end;
@@ -106,9 +120,30 @@ begin
 SaveOglasToDatabase;
 end;
 
+
+function TFrmIzvodjacOglas.GetSelectedZanrovi: string;
+var
+  I: Integer;
+  Zanrovi: TStringList;
+begin
+  Zanrovi := TStringList.Create;
+  try
+    for I := 0 to ListBoxZanrovi.Count - 1 do
+    begin
+      if ListBoxZanrovi.ListItems[I].IsChecked then
+        Zanrovi.Add(ListBoxZanrovi.ListItems[I].Text);
+    end;
+    Result := Zanrovi.DelimitedText;
+  finally
+    Zanrovi.Free;
+  end;
+end;
+
+
 procedure TFrmIzvodjacOglas.SaveOglasToDatabase;
 var
   Stream: TMemoryStream;
+  Zanrovi: string;
 begin
   Stream := TMemoryStream.Create;
   try
@@ -117,27 +152,28 @@ begin
       Image1.Bitmap.SaveToStream(Stream);
       Stream.Position := 0;
     end;
-
-
+    Zanrovi := GetSelectedZanrovi;
     DM.FDTransaction1.StartTransaction;
     try
       with DM.QTemp do
       begin
         SQL.Clear;
-        SQL.Text := 'INSERT INTO oglas (username, naziv_benda, biografija, slika) VALUES (:username, :naziv, :biografija, :slika)';
+        SQL.Text := 'INSERT INTO oglas (username, naziv_benda, biografija, slika, zanrovi, vrsta, dostupnost) ' +
+                    'VALUES (:username, :naziv, :biografija, :slika, :zanrovi, :vrsta, :dostupnost)';
         Params.ParamByName('username').AsString := 'your_username';
         Params.ParamByName('naziv').AsString := edNaziv.Text;
         Params.ParamByName('biografija').AsString := edBiografija.Text;
+        Params.ParamByName('zanrovi').AsString := Zanrovi;
+        Params.ParamByName('vrsta').AsString := cbVrsta.Selected.Text;
+        Params.ParamByName('dostupnost').AsDate := clDostupnost.Date;
         if ImageFilePath <> '' then
           Params.ParamByName('slika').LoadFromStream(Stream, ftBlob)
         else
           Params.ParamByName('slika').Clear;
         ExecSQL;
       end;
-
       DM.FDTransaction1.Commit;
     except
-
       DM.FDTransaction1.Rollback;
       raise;
     end;
@@ -146,4 +182,6 @@ begin
   end;
   ShowMessage('Podaci su sačuvani.');
 end;
+
+
 end.

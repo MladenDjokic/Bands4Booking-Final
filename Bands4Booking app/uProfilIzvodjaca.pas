@@ -27,13 +27,16 @@ type
     btnChat: TButton;
     imgRating: TImage;
     lbRating: TLabel;
+    lblVrsta: TLabel;
+    lblZanrovi: TLabel;
     procedure btnBackClick(Sender: TObject);
     procedure btnChatClick(Sender: TObject);
   private
-    { Private declarations }
+    FOglasID: Integer;
+    procedure LoadProfile;
   public
-  procedure LoadProfilIzvodjaca(const Username: string);
-    { Public declarations }
+    procedure LoadProfilIzvodjaca(const OglasID: Integer);
+    procedure ShowProfile(OglasID: Integer);
   end;
 
 var
@@ -44,6 +47,7 @@ implementation
 {$R *.fmx}
 
 uses uKorisnikMain, uKorisnikChat;
+
 procedure TFrmProfilIzvodjaca.btnBackClick(Sender: TObject);
 begin
   Self.Hide;
@@ -68,67 +72,48 @@ begin
   end;
 end;
 
-procedure TFrmProfilIzvodjaca.LoadProfilIzvodjaca(const Username: string);
-var
-  Stream: TMemoryStream;
-  AverageRating: Double;
+procedure TFrmProfilIzvodjaca.LoadProfile;
 begin
-  Stream := TMemoryStream.Create;
-  try
-    with DM.QTemp do
+  with DM.QTemp do
+  begin
+    SQL.Clear;
+    SQL.Text := 'SELECT * FROM oglas WHERE id = :id';
+    Params.ParamByName('id').AsInteger := FOglasID;
+    Open;
+    if not Eof then
     begin
-      SQL.Clear;
-      SQL.Text := 'SELECT naziv_benda, biografija, slika FROM oglas WHERE username = :username';
-      Params.ParamByName('username').AsString := Username;
-      Open;
-      if not IsEmpty then
+      LabelNaziv.Text := FieldByName('naziv_benda').AsString;
+      lblVrsta.Text := 'Vrsta: ' + FieldByName('vrsta').AsString;
+      lblZanrovi.Text := 'Žanrovi: ' + FieldByName('zanrovi').AsString;
+      MemoBiografija.Text := FieldByName('biografija').AsString;
+      lbRating.Text := 'Ocena: ' + FieldByName('ocena').AsString;
+      if not FieldByName('slika').IsNull then
       begin
-        LabelNaziv.Text := FieldByName('naziv_benda').AsString;
-        MemoBiografija.Text := FieldByName('biografija').AsString;
-
-        if not FieldByName('slika').IsNull then
-        begin
+        var Stream := TMemoryStream.Create;
+        try
           TBlobField(FieldByName('slika')).SaveToStream(Stream);
           Stream.Position := 0;
           Image1.Bitmap.LoadFromStream(Stream);
-        end
-        else
-        begin
-          Image1.Bitmap := nil;
+        finally
+          Stream.Free;
         end;
-      end
-      else
-      begin
-        LabelNaziv.Text := 'Bend nije pronađen';
-        MemoBiografija.Text := '';
-        Image1.Bitmap := nil;
-      end;
-
-
-      SQL.Clear;
-      SQL.Text := 'SELECT AVG(rating) AS avg_rating FROM ratings WHERE performer_id = (SELECT id FROM performers WHERE username = :username)';
-      Params.ParamByName('username').AsString := Username;
-      Open;
-
-      if not FieldByName('avg_rating').IsNull then
-      begin
-        AverageRating := FieldByName('avg_rating').AsFloat;
-        lbRating.Text := Format('Prosečna ocena: %.1f', [AverageRating]);
-      end
-      else
-      begin
-        lbRating.Text := 'Još nema ocena';
       end;
     end;
-  except
-    on E: Exception do
-    begin
-      ShowMessage('Greška prilikom učitavanja ocena: ' + E.Message);
-      lbRating.Text := 'Greška pri učitavanju ocena';
-    end;
+    Close;
   end;
-  Stream.Free;
 end;
 
+procedure TFrmProfilIzvodjaca.LoadProfilIzvodjaca(const OglasID: Integer);
+begin
+  FOglasID := OglasID;
+  LoadProfile;
+end;
+
+procedure TFrmProfilIzvodjaca.ShowProfile(OglasID: Integer);
+begin
+  LoadProfilIzvodjaca(OglasID);
+  Show;
+end;
 
 end.
+
